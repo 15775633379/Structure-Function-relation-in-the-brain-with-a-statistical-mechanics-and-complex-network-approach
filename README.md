@@ -10,7 +10,7 @@ This work was presented as a partial requirement to qualify for the title of **P
 
 Using data from the HCP dataset, we study the topological properties of structural connectivity, functional connectivity, and simulated functional connectivity. We then compared these topological properties with psychological test scores for twelve subjects selected for having obtained extreme scores on these tests. We obtain that atypical subjects in the psychological test can be recognized as having atypical topological properties in their structural or functional connectivity.
 
-- **Keywords:** Neurociencia, Resonancia magnética nuclear funcional, Resonancia magnética nuclear de difusión, relación estructura y función, modelo generalizado de Ising, Entropía, Análisis de redes.
+**Keywords:** Neurociencia, Resonancia magnética nuclear funcional, Resonancia magnética nuclear de difusión, relación estructura y función, modelo generalizado de Ising, Entropía, Análisis de redes.
 
 ## Description
 
@@ -23,6 +23,10 @@ Se usan los datos del HCP, explicar su estructura, los sujetos elegidos, los dat
 ## Brain Network Construction
 
     ### Parcelation
+    
+    ![image](https://github.com/DiegoHerediaF/A-first-analysis-of-friendship-and-work-relationships-in-students-who-take-a-course-      together/blob/16b61f32307bacd5285634acc33994d97f9eaba3/you_consider_them_friends.PNG)
+
+    **Figure 1.** Red de amistad, donde se observa la componente principal como el subgrupo de nodos altamente interconectado.
 
     ### Structural Connectivity (SC)
 
