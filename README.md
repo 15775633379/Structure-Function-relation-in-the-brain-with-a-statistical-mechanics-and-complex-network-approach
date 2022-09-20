@@ -2,9 +2,9 @@
 
 This project was realized by
 
-**Juan C Higuera C**
-
 **Diego A Heredia F**
+
+**Juan C Higuera C**
 
 This work was presented as a partial requirement to qualify for the title of **Physicist** and the grade obtained was **5.0/5.0**.
 
