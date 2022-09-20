@@ -24,7 +24,7 @@ Se usan los datos del HCP, explicar su estructura, los sujetos elegidos, los dat
 
 ### Parcelation
     
-![image](https://github.com/DiegoHerediaF/A-first-analysis-of-friendship-and-work-relationships-in-students-who-take-a-course-      together/blob/16b61f32307bacd5285634acc33994d97f9eaba3/you_consider_them_friends.PNG)
+![image](https://github.com/DiegoHerediaF/Network-science-and-statistical-mechanics-for-the-study-of-structure-function-relation-in-the-brain/blob/f5b0ace72789ea9d1bde6a52cb30c030f2136c7a/Images/diagrama_datos_HCP.PNG)
 
 **Figure 1.** Red de amistad, donde se observa la componente principal como el subgrupo de nodos altamente interconectado.
 
