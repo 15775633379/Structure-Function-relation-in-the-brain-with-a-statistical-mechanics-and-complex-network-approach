@@ -41,7 +41,7 @@ Se presentan los resultados de la primera parte del trabajo, correspondiente a l
 
 ### Parcelation
 
-Se hizo uso de los resultados expuestos en [Neuroparc](https://github.com/neurodata/neuroparc) para elegir la parcelación de AAL (Automated Anatomical Labeling) que divide el cerebro en 116 regiones incluyendo el cortex y las regiones subcorticales.
+Se hizo uso de los resultados expuestos en [Neuroparc](https://github.com/neurodata/neuroparc) para elegir la parcelación de AAL (Automated Anatomical Labeling) que divide el cerebro en 116 regiones incluyendo el cortex y las regiones subcorticales, generando asi los nodos sobre lo que se contruiran las redes estructurales y funcionales.
 
 ### Structural Connectivity (SC)
 
@@ -50,6 +50,10 @@ Los datos con la informacion estructural, extraidos por resonancia magnetica de 
 Aunando el tractograma que se extrae de los datos del HCP con la parcelación de AAL, se determina la matriz de **conectividad estructural** mediante el conteo de los tractos que van de una región o nodo específico a otro, como el peso de los enlaces. A la matriz estructural se le aplico un umbral de 0.05 según su normalización respecto del enlace con mayor peso. El código asociado al algoritmo y la contruccion de la red se implementó en Python por medio de las librerías especializadas para el procesado y análisis de imágenes médicas DIPY & NiBabel.
 
 ### Functional Connectivity (FC)
+
+La información usada para construir la conectividad funcional de cada sujeto durante cada una de las tareas que se han de estudiar, proviene de los datos resonancia magnética funcional preprocesados y limpios de cualquier actividad funcional producida por movimientos motores involuntarios, dando como resultado una imagen funcional o tensor de tercer orden que contiene en sus componentes (o voxels) la señal BOLD medida cada 0.72 segundos, y formando así unas series de tiempo para cada voxel.
+
+Una vez cargada la parcelación al archivo funcional, las series de tiempo se promedian dentro de los voxeles que conforman una parcela o nodo, y se define una medida de correlación que cuantifica los vinculos funcionales. Para este caso se toma el coeficiente de Pearson, una medida de correlación lineal, como el criterio para establecer correlaciones dentro de las series de tiempo del archivo obtenido, generando asi una matriz simétrica que representa la conectividad funcional. Finalmente, se le aplicó un umbral a esta matriz, conservando unicamente las correlaciones que tengan una magnitud de al menos el $5\%$ respecto a la correlación más alta encontrada.
 
 ### Spin Glass Model for Functional Connectivity
 
