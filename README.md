@@ -22,26 +22,26 @@ Se usan los datos del HCP, explicar su estructura, los sujetos elegidos, los dat
 
 ## Brain Network Construction
 
-    ### Parcelation
+### Parcelation
     
-    ![image](https://github.com/DiegoHerediaF/A-first-analysis-of-friendship-and-work-relationships-in-students-who-take-a-course-      together/blob/16b61f32307bacd5285634acc33994d97f9eaba3/you_consider_them_friends.PNG)
+![image](https://github.com/DiegoHerediaF/A-first-analysis-of-friendship-and-work-relationships-in-students-who-take-a-course-      together/blob/16b61f32307bacd5285634acc33994d97f9eaba3/you_consider_them_friends.PNG)
 
-    **Figure 1.** Red de amistad, donde se observa la componente principal como el subgrupo de nodos altamente interconectado.
+**Figure 1.** Red de amistad, donde se observa la componente principal como el subgrupo de nodos altamente interconectado.
 
-    ### Structural Connectivity (SC)
+### Structural Connectivity (SC)
 
-    ### Functional Connectivity (FC)
+### Functional Connectivity (FC)
 
-    ### Spin Glass Model for Functional Connectivity
+### Spin Glass Model for Functional Connectivity
 
 
 ## Results (e.g. Working Memory Task)
 
-    ### Psychometric Test
+### Psychometric Test
     
-    ### Global Properties
+### Global Properties
 
-    ### Local Properties
+### Local Properties
 
 ## Conclusions
 
