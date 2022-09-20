@@ -37,15 +37,21 @@ Se usan los datos del HCP, explicar su estructura, los sujetos elegidos, los dat
 **Figure 4.** Sujetos elegidos, se muestra su código dentro del HCP-1200, notación para este trabajo y categoría.
 
 ## Brain Network Construction
+Se presentan los resultados de la primera parte del trabajo, correspondiente a la construcción del modelo de grafo de la conectividad estructural, de la conectividad funcional y del modelo mecánico estadístico que nos permite simular la conectividad funcional a partir de la estructural.
 
 ### Parcelation
 
+Se hizo uso de los resultados expuestos en [Neuroparc](https://github.com/neurodata/neuroparc) para elegir la parcelación de AAL (Automated Anatomical Labeling) que divide el cerebro en 116 regiones incluyendo el cortex y las regiones subcorticales.
+
 ### Structural Connectivity (SC)
+
+Los datos con la informacion estructural, extraidos por resonancia magnetica de difusion, y proporcionados por el HCP (en la carpeta **T1w**), sirven de base para construir un tractograma. Existen múltiples formas de hacer tractografía, y el método que se usó aquí fue a traves de un algoritmo local denominado \textit{Particle Filtering Tracking}. Todos los tractos nerviosos (streamlines) que el algoritmo estima se guardan en un archivo TRK o tractograma en un formato de representación estándar RASMM de NiBabel. 
+
+Aunando el tractograma que se extrae de los datos del HCP con la parcelación de AAL, se determina la matriz de **conectividad estructural** mediante el conteo de los tractos que van de una región o nodo específico a otro, como el peso de los enlaces. A la matriz estructural se le aplico un umbral de 0.05 según su normalización respecto del enlace con mayor peso. El código asociado al algoritmo y la contruccion de la red se implementó en Python por medio de las librerías especializadas para el procesado y análisis de imágenes médicas DIPY & NiBabel.
 
 ### Functional Connectivity (FC)
 
 ### Spin Glass Model for Functional Connectivity
-
 
 ## Results (e.g. Working Memory Task)
 
