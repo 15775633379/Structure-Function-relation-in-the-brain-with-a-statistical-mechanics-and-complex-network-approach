@@ -20,13 +20,25 @@ El desarrollo de las técnicas de neuroimagen ha permitido por primera vez en la
 
 Se usan los datos del HCP, explicar su estructura, los sujetos elegidos, los datos psicometricos y de personalidad extraidos asi como la info de resonancia magnetica funcional y de difusion
 
+![image](https://github.com/DiegoHerediaF/Network-science-and-statistical-mechanics-for-the-study-of-structure-function-relation-in-the-brain/blob/f5b0ace72789ea9d1bde6a52cb30c030f2136c7a/Images/diagrama_datos_HCP.PNG)
+
+**Figure 1.** Resumen de los archivos utilizados provenientes de las resonancias y su ubicación en la estructura de datos del proyecto conectoma humano.
+
+![image](https://github.com/DiegoHerediaF/Network-science-and-statistical-mechanics-for-the-study-of-structure-function-relation-in-the-brain/blob/d87eb4978cc6f3c923962533900f04eab1b2da2c/Images/personality_test.jpeg)
+
+**Figure 2.** Tests de personalidad extraídos del HCP.
+
+![image](https://github.com/DiegoHerediaF/Network-science-and-statistical-mechanics-for-the-study-of-structure-function-relation-in-the-brain/blob/d87eb4978cc6f3c923962533900f04eab1b2da2c/Images/pruebas_psicometricas.jpeg)
+
+**Figure 3.** Medidas de las tareas exprimentales del HCP extraídas de los sujetos. Los puntajes de social, emoción y memoria operativa fueron los que se utilizaron para elegir las poblaciones por tarea.
+
+![image]([https://github.com/DiegoHerediaF/Network-science-and-statistical-mechanics-for-the-study-of-structure-function-relation-in-the-brain/blob/d87eb4978cc6f3c923962533900f04eab1b2da2c/Images/pruebas_psicometricas.jpeg](https://github.com/DiegoHerediaF/Network-science-and-statistical-mechanics-for-the-study-of-structure-function-relation-in-the-brain/blob/52118971cfe42f0131596501977ece2083770af3/Images/subjects_hcp_1200.jpeg))
+
+**Figure 4.** Sujetos elegidos, se muestra su código dentro del HCP-1200, notación para este trabajo y categoría.
+
 ## Brain Network Construction
 
 ### Parcelation
-    
-![image](https://github.com/DiegoHerediaF/Network-science-and-statistical-mechanics-for-the-study-of-structure-function-relation-in-the-brain/blob/f5b0ace72789ea9d1bde6a52cb30c030f2136c7a/Images/diagrama_datos_HCP.PNG)
-
-**Figure 1.** Red de amistad, donde se observa la componente principal como el subgrupo de nodos altamente interconectado.
 
 ### Structural Connectivity (SC)
 
