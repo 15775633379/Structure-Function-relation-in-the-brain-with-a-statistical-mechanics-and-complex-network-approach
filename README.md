@@ -10,16 +10,36 @@ This work was presented as a partial requirement to qualify for the title of **P
 
 Using data from the HCP dataset, we study the topological properties of structural connectivity, functional connectivity, and simulated functional connectivity. We then compared these topological properties with psychological test scores for twelve subjects selected for having obtained extreme scores on these tests. We obtain that atypical subjects in the psychological test can be recognized as having atypical topological properties in their structural or functional connectivity.
 
+- **Keywords:** Neurociencia, Resonancia magnética nuclear funcional, Resonancia magnética nuclear de difusión, relación estructura y función, modelo generalizado de Ising, Entropía, Análisis de redes.
+
+## Description
 
 El desarrollo de las técnicas de neuroimagen ha permitido por primera vez en la historia acceder a la estructura y dinámica cerebral en tiempo real. Atendiendo a esta oportunidad, en este trabajo se hace uso de datos de Resonancia magnética nuclear, Ciencia de redes y Mecánica estadística, con el fin de explorar la relación entre la conectividad de tractos nerviosos del cerebro, su actividad metabólica y la función cerebral; esta ultima cuantificada por medio de tareas experimentales cognitivas y pruebas psicométricas. Para esto, primero se construyeron modelos de grafos, en los cuales los nodos se definieron como regiones cerebrales y los enlaces como cantidad de tractos nerviosos en el caso de la estructura, y como correlaciones de la actividad metabólica en el caso de la actividad cerebral. Además de esto, para explorar las interacciones de alto orden implícitas en la estructura, se hizo uso de un modelo mecánico estadístico capaz de simular correlaciones entre regiones cerebrales a partir de la información de su conectividad estructural, obteniendo así una red cerebral simulada a la cual junto al resto de redes cerebrales se le estudiaron sus propiedades topológicas. Se concluye que estas propiedades topológicas logran identificar a sujetos atípicos en los resultados psicológicos, sugiriendo la viabilidad de una rica interacción entre neurociencia de redes y psicología.
+
+## Data
+
+Se usan los datos del HCP, explicar su estructura, los sujetos elegidos, los datos psicometricos y de personalidad extraidos asi como la info de resonancia magnetica funcional y de difusion
+
+## Brain Network Construction
+
+    ### Parcelation
+
+    ### Structural Connectivity (SC)
+
+    ### Functional Connectivity (FC)
+
+    ### Spin Glass Model for Functional Connectivity
+
+
+## Results (e.g. Working Memory Task)
+
+    ### Psychometric Test
     
-    
-Palabras clave: Neurociencia, Resonancia magnética nuclear funcional, Resonancia magnética nuclear de difusión, relación estructura y función, modelo generalizado de Ising, Entropía, Análisis de redes.
+    ### Global Properties
 
+    ### Local Properties
 
-
-
-
+## Conclusions
 
 - No se encontró una relación entre las propiedades topológicas de las redes estructurales y las redes funcionales, así como tampoco una relación entre la similitud de las redes estructurales y funcionales con el desempeño en las pruebas cognitivas. 
     
