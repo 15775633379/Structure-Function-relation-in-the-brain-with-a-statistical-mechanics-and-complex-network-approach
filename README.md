@@ -32,7 +32,7 @@ Se usan los datos del HCP, explicar su estructura, los sujetos elegidos, los dat
 
 **Figure 3.** Medidas de las tareas exprimentales del HCP extraídas de los sujetos. Los puntajes de social, emoción y memoria operativa fueron los que se utilizaron para elegir las poblaciones por tarea.
 
-![image]([https://github.com/DiegoHerediaF/Network-science-and-statistical-mechanics-for-the-study-of-structure-function-relation-in-the-brain/blob/d87eb4978cc6f3c923962533900f04eab1b2da2c/Images/pruebas_psicometricas.jpeg](https://github.com/DiegoHerediaF/Network-science-and-statistical-mechanics-for-the-study-of-structure-function-relation-in-the-brain/blob/52118971cfe42f0131596501977ece2083770af3/Images/subjects_hcp_1200.jpeg))
+![image](https://github.com/DiegoHerediaF/Network-science-and-statistical-mechanics-for-the-study-of-structure-function-relation-in-the-brain/blob/abf703684f2929a2c75fdcddf4d47e877ae02ed4/Images/subjects_hcp_1200.jpeg)
 
 **Figure 4.** Sujetos elegidos, se muestra su código dentro del HCP-1200, notación para este trabajo y categoría.
 
