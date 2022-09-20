@@ -39,6 +39,10 @@ Se usan los datos del HCP, explicar su estructura, los sujetos elegidos, los dat
 ## Brain Network Construction
 Se presentan los resultados de la primera parte del trabajo, correspondiente a la construcción del modelo de grafo de la conectividad estructural, de la conectividad funcional y del modelo mecánico estadístico que nos permite simular la conectividad funcional a partir de la estructural.
 
+![image](https://github.com/DiegoHerediaF/Network-science-and-statistical-mechanics-for-the-study-of-structure-function-relation-in-the-brain/blob/3ab8a961e42dcf69fcecbe062a6e9ff94cc9418f/Images/conectividades_WM_M+.png)
+
+**Figure 5.** Las diferentes matrices de conectividad extraidas para el sujeto de sexo masculino con mayor puntaje en la prueba de working memory (WM M+). Dado que la conectividad estructural es muy dispersa se aplico un logaritmo a cada una de sus componentes para mejorar la visualización
+
 ### Parcelation
 
 Se hizo uso de los resultados expuestos en [Neuroparc](https://github.com/neurodata/neuroparc) para elegir la parcelación de AAL (Automated Anatomical Labeling) que divide el cerebro en 116 regiones incluyendo el cortex y las regiones subcorticales, generando asi los nodos sobre lo que se contruiran las redes estructurales y funcionales.
