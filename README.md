@@ -18,35 +18,29 @@ El desarrollo de las técnicas de neuroimagen ha permitido por primera vez en la
 
 ## Data
 
-Se usan los datos del HCP, explicar su estructura, los sujetos elegidos, los datos psicometricos y de personalidad extraidos asi como la info de resonancia magnetica funcional y de difusion
-
-El proyecto conectoma humano (HCP) es un esfuerzo inter-institucional liderado por el King´s College de London, el Imperial College de London y la universidad de Oxford con el fin de mapear la conectividad anatómica y funcional en el cerebro humano y estudiar su relación con la cognición, la conducta y la herencia genética.
-
-En este trabajo, se busca estudiar la población de humanos adultos sanos y jóvenes, elegidos en términos de su desempeño, alto o bajo, en un conjunto de pruebas psicométricas.
-
-De todos estos datos ofrecidos por el HCP para el estudio del adulto joven, en este trabajo de grado solo se usarán algunos resultados de tareas cognitivas, pruebas de personalidad y algunos archivos provenientes de dMRI, fMRI y sMRI a 3T\footnote{Aunque dentro del HCP también existen sujetos con datos de resonancia magnetica a 7T, tal como se muestra en la figura \ref{fig:HCP_datos}}. El resumen de los archivos a utilizar, y su ubicación en la estructura de datos ofrecida por el HCP por medio del acceso desde Amazon Web Services se muestra en la figura \ref{fig:diagrama_datos}.
-
-Como se observa en la figura \ref{fig:diagrama_datos}, se estudiaron 3 de las 7 tareas ofrecidas por el HCP. Los archivos necesarios para construir la conectividad estructural se encuentran en la carpeta T1W y los necesarios para construir la FC en la carpeta MNINonLinear
-
-De todos los datos ofrecidos por el HCP para caracterizar psicológicamente a los sujetos, en este trabajo se eligieron los resultados de los cinco grandes de la personalidad (Big-Five) \citep{goldberg1990alternative}, entendidos como 5 rasgos de personalidad resultado de análisis de reducción de dimensionalidad de los ítems utilizados en la prueba, los cuales se suponen relativamente ortogonales y permiten caracterizar la personalidad de las personas de acuerdo con los valores asociados a cada uno de los 5 rasgo y de acuerdo la combinación de dichos valores en un perfiles más globales de personalidad. Las tareas experimentales cognitivas elegidas fueron las tres que realizadas sincrónicamente con las resonancias funcionales elegidas; es decir las tareas denominadas: Memoria Operativa, Emoción y Social. Además, se tomaron los resultados de las pruebas de velocidad de procesamiento, de resistencia física y de cognición fluida. 
-
-Para evaluar cognitivamente a los sujetos se usaron 6 medidas, 3 ofrecidas por el HCP y 3 construidas a partir de medidas ofrecidas por el HCP - en la tabla \ref{tab:psico} se muestra en la columna \textbf{Prueba Psicométrica} el nombre de la medida en este trabajo y a la derecha su traducción en términos de las medidas ofrecidas por el HCP. Las medidas consistentes en una fracción buscan tener en cuenta tanto la precisión como los tiempos de reacción, de tal forma que toman valores más altos cuando la precisión es alta y los tiempos de reacción media menores.
-
-![image](https://github.com/DiegoHerediaF/Network-science-and-statistical-mechanics-for-the-study-of-structure-function-relation-in-the-brain/blob/f5b0ace72789ea9d1bde6a52cb30c030f2136c7a/Images/diagrama_datos_HCP.PNG)
-
-**Figure 1.** Resumen de los archivos utilizados provenientes de las resonancias y su ubicación en la estructura de datos del proyecto conectoma humano.
-
-![image](https://github.com/DiegoHerediaF/Network-science-and-statistical-mechanics-for-the-study-of-structure-function-relation-in-the-brain/blob/d87eb4978cc6f3c923962533900f04eab1b2da2c/Images/personality_test.jpeg)
-
-**Figure 2.** Tests de personalidad extraídos del HCP.
-
-![image](https://github.com/DiegoHerediaF/Network-science-and-statistical-mechanics-for-the-study-of-structure-function-relation-in-the-brain/blob/d87eb4978cc6f3c923962533900f04eab1b2da2c/Images/pruebas_psicometricas.jpeg)
-
-**Figure 3.** Medidas de las tareas exprimentales del HCP extraídas de los sujetos. Los puntajes de social, emoción y memoria operativa fueron los que se utilizaron para elegir las poblaciones por tarea.
+En este trabajo, se busca estudiar un subgrupo de sujetos, ver **figura 1**, de la población de humanos adultos sanos y jóvenes ofrecida por el proyecto del conectoma humano, elegidos en términos de su desempeño, alto o bajo, en un conjunto de pruebas psicométricas. El proyecto conectoma humano (HCP) es un esfuerzo inter-institucional liderado por el King´s College de London, el Imperial College de London y la universidad de Oxford con el fin de mapear la conectividad anatómica y funcional en el cerebro humano y estudiar su relación con la cognición, la conducta y la herencia genética.
 
 ![image](https://github.com/DiegoHerediaF/Network-science-and-statistical-mechanics-for-the-study-of-structure-function-relation-in-the-brain/blob/abf703684f2929a2c75fdcddf4d47e877ae02ed4/Images/subjects_hcp_1200.jpeg)
 
-**Figure 4.** Sujetos elegidos, se muestra su código dentro del HCP-1200, notación para este trabajo y categoría.
+**Figure 1.** Sujetos elegidos, se muestra su código dentro del HCP-1200, notación para este trabajo y categoría.
+
+De todos estos datos ofrecidos por el HCP para el estudio del adulto joven, en este trabajo solo se usaron algunos resultados de tareas cognitivas, pruebas de personalidad y algunos archivos provenientes de dMRI, fMRI y sMRI a 3T. El resumen de los archivos a utilizar, y su ubicación en la estructura de datos ofrecida por el HCP por medio del acceso desde Amazon Web Services se muestra en la **figura 2**. Las tareas experimentales cognitivas elegidas fueron las tres realizadas sincrónicamente con las resonancias funcionales elegidas; es decir las tareas denominadas: Memoria Operativa, Emoción y Social. Los archivos necesarios para construir la conectividad estructural se encuentran en la carpeta T1W y los necesarios para construir la conectividad funcional en la carpeta MNINonLinear.
+
+![image](https://github.com/DiegoHerediaF/Network-science-and-statistical-mechanics-for-the-study-of-structure-function-relation-in-the-brain/blob/f5b0ace72789ea9d1bde6a52cb30c030f2136c7a/Images/diagrama_datos_HCP.PNG)
+
+**Figure 2.** Resumen de los archivos utilizados provenientes de las resonancias y su ubicación en la estructura de datos del proyecto conectoma humano.
+
+Para caracterizar psicológicamente a los sujetos elegidos, se eligieron los resultados de los cinco grandes de la personalidad (Big-Five), ver **figura 3**, entendidos como 5 rasgos resultado del análisis de reducción de dimensionalidad de los ítems utilizados en la prueba, los cuales se suponen relativamente ortogonales y permiten caracterizar la personalidad de las personas de acuerdo con los valores asociados a cada uno de los 5 rasgos y de acuerdo la combinación de dichos valores en un perfil más globales de personalidad. 
+
+![image](https://github.com/DiegoHerediaF/Network-science-and-statistical-mechanics-for-the-study-of-structure-function-relation-in-the-brain/blob/d87eb4978cc6f3c923962533900f04eab1b2da2c/Images/personality_test.jpeg)
+
+**Figure 3.** Tests de personalidad extraídos del HCP.
+
+Para evaluar cognitivamente a los sujetos se usaron 6 medidas, 3 ofrecidas por el HCP y 3 construidas a partir de medidas ofrecidas por el HCP - en la **figura 4** se muestra en la columna \textbf{Prueba Psicométrica} el nombre de la medida en este trabajo y a la derecha su traducción en términos de las medidas ofrecidas por el HCP. Las medidas consistentes en una fracción buscan tener en cuenta tanto la precisión como los tiempos de reacción, de tal forma que toman valores más altos cuando la precisión es alta y los tiempos de reacción media menores.
+
+![image](https://github.com/DiegoHerediaF/Network-science-and-statistical-mechanics-for-the-study-of-structure-function-relation-in-the-brain/blob/d87eb4978cc6f3c923962533900f04eab1b2da2c/Images/pruebas_psicometricas.jpeg)
+
+**Figure 4.** Medidas de las tareas exprimentales del HCP extraídas de los sujetos. Los puntajes de social, emoción y memoria operativa fueron los que se utilizaron para elegir las poblaciones por tarea.
 
 ## Brain Network Construction
 Se presentan los resultados de la primera parte del trabajo, correspondiente a la construcción del modelo de grafo de la conectividad estructural, de la conectividad funcional y del modelo mecánico estadístico que nos permite simular la conectividad funcional a partir de la estructural.
