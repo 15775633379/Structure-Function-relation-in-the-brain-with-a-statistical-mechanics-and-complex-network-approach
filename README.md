@@ -71,15 +71,14 @@ Se quieren modelar las correlaciones en la actividad metabólica cerebral, tal c
 
 Se puede establecer un Hamiltoniano que de cuenta de la interacción entre espines/nodos como, 
 
-\begin{equation}
-    H = \frac{1}{2}\Theta \sum_i S_i - \frac{1}{2}W \sum_{i,j}C_{i,j}S_iS_j,
-\end{equation}
+$$H = \frac{1}{2}\Theta \sum_i S_i - \frac{1}{2}W \sum_{i,j}C_{i,j}S_iS_j$$
 
-donde $S_i$,$S_j= +/-1$ indican el estado del nodo, $\Theta$ índica el umbral de energía para que una región cambie su estado; $W$ es un parámetro de escala para la matriz de adyacencia, $A_{i,j}$ es la matriz de adyacencia a la conectividad estructural y $T$ se define como la temperatura del sistema, parámetro que modulará la aleatoriedad de la ocurrencia de los estados.
+
+donde $S_i$,$S_j=\\pm 1$ indican el estado del nodo, $\Theta$ índica el umbral de energía para que una región cambie su estado; $W$ es un parámetro de escala para la matriz de adyacencia, $A_{i,j}$ es la matriz de adyacencia a la conectividad estructural y $T$ se define como la temperatura del sistema, parámetro que modulará la aleatoriedad de la ocurrencia de los estados.
 
 Se utilizará al igual que en física estadística y entendiéndose en el sentido de la teoría de la información el principio de máxima entropía, para asociar una probabilidad de ocurrencia de estado a cada energía definida por el Hamiltoniano. Muestreando los estados de espín de la red usando un algoritmo de Metropolis Hasting modificado, donde cada 500 iteraciones se invierte el estado de todos los espines para navegar entre distintos atractores o mínimos de energía, y así construir la conectividad funcional simulada cuantificando correlaciones en la actividad cerebral modelada. 
 
-Se exploraron distintos valores de parámetros y se escogieron aquellos alrededor de los cuales las simulaciones presentaron comportamiento en transición de fase para la mayoría de sujetos, esto inspirado en la hipótesis del cerebro crítico. De esta forma se tomó W = 8.53, Theta=1 y T = 4.
+Se exploraron distintos valores de parámetros y se escogieron aquellos alrededor de los cuales las simulaciones presentaron comportamiento en transición de fase para la mayoría de sujetos, esto inspirado en la hipótesis del cerebro crítico. De esta forma se tomó W = 8.53, $\Theta=1$ y T = 4.
 
 ## Results (e.g. Working Memory Task)
 
