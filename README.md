@@ -67,14 +67,14 @@ Una vez cargada la parcelación al archivo funcional, las series de tiempo se pr
 
 ### Spin Glass Model for Functional Connectivity
 
-Se quieren modelar las correlaciones en la actividad metabólica cerebral, tal como se mide por medio de fMRI. Para esto consideramos que cada parcela sólo puede tener dos estados de activación, +1 y -1; +1 cuando la parcela presenta un valor mayor al de su promedio en la señal BOLD y -1 cuando presenta un valor menor, de esta forma asociando a cada estado de activación cerebral un estado de espín neto sobre la red. Se considera que la interacción entre regiones cerebrales es lineal y tal que busca alinear (i.e. poner en el mismo estado) a los nodos vecinos, donde para tener en cuenta la influencia de factores externos y que la mayoría de la actividad cerebral es autogenerada, puede introducirse un factor estocástico, que modifica el estado de region/nodo con cierta probabilidad; y que se modela como un ruido térmico, lo que nos lleva a modelos del mismo tipo que el denominado en física estadística como Modelo de Ising.
+Se quieren modelar las correlaciones en la actividad metabólica cerebral, tal como se mide por medio de fMRI. Para esto consideramos que cada parcela sólo puede tener dos estados de activación, +/-1; +1 cuando la parcela presenta un valor mayor al de su promedio en la señal BOLD y -1 cuando presenta un valor menor, de esta forma asociando a cada estado de activación cerebral un estado de espín neto sobre la red. Se considera que la interacción entre regiones cerebrales es lineal y tal que busca alinear (i.e. poner en el mismo estado) a los nodos vecinos, donde para tener en cuenta la influencia de factores externos y que la mayoría de la actividad cerebral es autogenerada, puede introducirse un factor estocástico, que modifica el estado de region/nodo con cierta probabilidad; y que se modela como un ruido térmico, lo que nos lleva a modelos del mismo tipo que el denominado en física estadística como Modelo de Ising.
 
 Se puede establecer un Hamiltoniano que de cuenta de la interacción entre espines/nodos como, 
 
 $$H = \frac{1}{2}\Theta \sum_i S_i - \frac{1}{2}W \sum_{i,j}C_{i,j}S_iS_j$$
 
 
-donde $S_i$, $S_j$ indican el estado del nodo ($\pm 1$), $\Theta$ índica el umbral de energía para que una región cambie su estado; $W$ es un parámetro de escala para la matriz de adyacencia, $A_{i,j}$ es la matriz de adyacencia a la conectividad estructural y $T$ se define como la temperatura del sistema, parámetro que modulará la aleatoriedad de la ocurrencia de los estados.
+donde $S_i$, $S_j$ indican el estado del nodo (+/-1), $\Theta$ índica el umbral de energía para que una región cambie su estado; $W$ es un parámetro de escala para la matriz de adyacencia, $A_{i,j}$ es la matriz de adyacencia a la conectividad estructural y $T$ se define como la temperatura del sistema, parámetro que modulará la aleatoriedad de la ocurrencia de los estados.
 
 Se utilizará al igual que en física estadística y entendiéndose en el sentido de la teoría de la información el principio de máxima entropía, para asociar una probabilidad de ocurrencia de estado a cada energía definida por el Hamiltoniano. Muestreando los estados de espín de la red usando un algoritmo de Metropolis Hasting modificado, donde cada 500 iteraciones se invierte el estado de todos los espines para navegar entre distintos atractores o mínimos de energía, y así construir la conectividad funcional simulada cuantificando correlaciones en la actividad cerebral modelada. 
 
@@ -82,11 +82,40 @@ Se exploraron distintos valores de parámetros y se escogieron aquellos alrededo
 
 ## Results (e.g. Working Memory Task)
 
-### Psychometric Test
+Se presentan algunos de los resultados de la comparación entre la conectividad estructural/simulada respecto a las conectividades funcionales. Así mismo se muestran algunos resultados de las tareas experimentales y de la prueba psicométrica de personalidad para los sujetos elegidos junto a varias propiedades topológicas globales y nodales de sus redes cerebrales.
+
+Para guiarse en el análisis de resultados es útil tener en cuenta las preguntas que guían este trabajo:
+
+- ¿Hay relación entre los resultados tareas cognitivas y de personalidad con las propiedades topológicas de las redes cerebrales?
+- ¿Es posible discernir una relación entre las diferencias en propiedades topológicas estructurales entre los sujetos y sus propiedades topológicas funcionales?
+- ¿El modelo generalizado de Ising logra reproducir aspectos producto de interacciones de alto orden de la conectividad funcional implícitos en la estructura? 
+- ¿Qué propiedades topológicas tiene la conectividad funcional simulada por medio del modelo generalizado de Ising? ¿Difieren de las de la conectividad estructural?
+
+Los resultados se agrupan por los sujetos elegidos como peores o mejores respecto a las tareas denominadas social, de emoción y de memoria operativa. Se muestran primero los resultados en las tareas experimentales y la prueba de personalidad, luego se presentan las comparaciones con distancia euclidiana entre la conectividad estructural/simulada y las conectividades funcionales; junto a esta información se encuentran también las propiedades topológicas globales de la red estructural, simulada, la funcional del reposo y la funcional de la tarea correspondiente con la que se eligieron los sujetos. Finalmente se presentan algunas propiedades topológicas nodales locales (entropía y energía) y globales (cercanía e intermediación) para la red estructural y funcional de la tarea correspondiente a la población.
+
+### Psychometric and Personality Tests
+
+![image](https://github.com/DiegoHerediaF/Network-science-and-statistical-mechanics-for-the-study-of-structure-function-relation-in-the-brain/blob/aae061020726dfb9486246459233b9ed8a8293f5/Images/psicometricas_Memoria%20Operativa.png)
+
+**Figure 5.** Para la población de sujetos clasificada respecto a las tareas de memoria operativa, se muestran los resultados en las pruebas psicométricas y los rasgos de personalidad.
+
+### Differences between Structural and Functional Connectivities
+
+![image](https://github.com/DiegoHerediaF/Network-science-and-statistical-mechanics-for-the-study-of-structure-function-relation-in-the-brain/blob/aae061020726dfb9486246459233b9ed8a8293f5/Images/distancias_WM.png)
+
+**Figure 6.** Se muestran las distancias euclidianas entre la conectividad estructural y simulada con las conectividades funcionales para distintas tareas.
     
 ### Global Properties
 
+![image](https://github.com/DiegoHerediaF/Network-science-and-statistical-mechanics-for-the-study-of-structure-function-relation-in-the-brain/blob/aae061020726dfb9486246459233b9ed8a8293f5/Images/globales_WM.png)
+
+**Figure 7.** Para la población de sujetos clasificada respecto a las tareas de memoria operativa, se muestran las propiedades topológicas globales obtenidas para las redes estructurales, en reposo, simuladas y de memoria operativa.
+
 ### Local Properties
+
+![image](https://github.com/DiegoHerediaF/Network-science-and-statistical-mechanics-for-the-study-of-structure-function-relation-in-the-brain/blob/aae061020726dfb9486246459233b9ed8a8293f5/Images/locales_WM.png)
+
+**Figure 8.** Para la población de sujetos clasificada respecto a las tareas de memoria operativa, se muestran las medidas locales, obtenidas para las regiones cerebrales de las redes estructurales y funcionales (asociadas a la tarea de memoria operativa).
 
 ## Conclusions
 
