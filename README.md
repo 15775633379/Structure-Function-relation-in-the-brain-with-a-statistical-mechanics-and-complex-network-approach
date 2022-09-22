@@ -101,13 +101,13 @@ Los resultados se agrupan por los sujetos elegidos como peores o mejores respect
 
 ### Differences between Structural and Functional Connectivities
 
-![image](https://github.com/DiegoHerediaF/Network-science-and-statistical-mechanics-for-the-study-of-structure-function-relation-in-the-brain/blob/aae061020726dfb9486246459233b9ed8a8293f5/Images/distancias_WM.png)
+![image](https://github.com/DiegoHerediaF/Network-science-and-statistical-mechanics-for-the-study-of-structure-function-relation-in-the-brain/blob/310c588097c09ed069da0a324f4dd295d9842db4/Images/distancias_WM.png)
 
 **Figure 6.** Se muestran las distancias euclidianas entre la conectividad estructural y simulada con las conectividades funcionales para distintas tareas.
     
 ### Global Properties
 
-![image](https://github.com/DiegoHerediaF/Network-science-and-statistical-mechanics-for-the-study-of-structure-function-relation-in-the-brain/blob/aae061020726dfb9486246459233b9ed8a8293f5/Images/globales_WM.png)
+![image](https://github.com/DiegoHerediaF/Network-science-and-statistical-mechanics-for-the-study-of-structure-function-relation-in-the-brain/blob/310c588097c09ed069da0a324f4dd295d9842db4/Images/globales_WM.png)
 
 **Figure 7.** Para la población de sujetos clasificada respecto a las tareas de memoria operativa, se muestran las propiedades topológicas globales obtenidas para las redes estructurales, en reposo, simuladas y de memoria operativa.
 
